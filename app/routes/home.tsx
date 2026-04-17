@@ -1,3 +1,4 @@
+import usePopularMovies from "../../hooks/usePopularMovies";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -8,5 +9,8 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
+  const { data } = usePopularMovies(1);
+  console.log(data);
+
   return <div>home</div>;
 }
