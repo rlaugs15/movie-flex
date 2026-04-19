@@ -62,6 +62,7 @@ export default function Home() {
       >
         <div className="text-4xl">세 번째 화면</div>
       </section>
+      <Nav scrollToSection={scrollToSection} />
     </main>
   );
 }
